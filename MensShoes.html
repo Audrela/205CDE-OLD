@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>My Website</title>
+	<link href="css/styles.1.css" type="text/css" rel="stylesheet" />
+	<script type="text/javascript" src="js/simpleCart_uncompressed.js"></script>
+	<!-- script for adding items to basket. Without this function it wouldn't work -->
+	<script type="text/javascript">
+		simpleCart = new cart;
+	</script>
+	<!-- .price Style for price tags underneeth the picture. All above are for Cart menu design and styling. -->
+	<style>
+	.price{
+	display:block;
+	float: left;
+	width:33px;
+	height:21px;
+	line-height:20px;
+	margin-top: 10px;
+	color: black;
+	font-weight: bold;
+	font-size:15px;
+	}
+	.cartHeaders,.totalRow{display:none;}
+		.simpleCart_items{
+			overflow-y:auto;
+			overflow-x:hidden;
+			height:324px;
+			width:243px;
+			margin-bottom:20px;
+		}
+		.itemContainer{
+			clear:both;
+			width:229px;
+			padding:11px 0;
+			font-size:11px;
+		}
+		.itemImage{
+			float:left;
+			width:60px;
+		}
+		.itemName{
+			float:left;
+			width:85px;
+		}
+		.itemPrice{
+			float:left;
+			width:85px;
+			color: black;
+		}
+		.itemQuantity{
+			float:left;
+			width:33px;
+			margin-top:-12px;
+			vertical-align:middle;
+		}
+		.itemQuantity input{
+			width:20px;
+			border:1px solid #ccc;
+			padding:3px 2px;
+		}
+		
+		.itemTotal{
+			float:left;
+			color:#c23f26;
+			margin-top:-6px
+		}
+		
+	</style>
+</head>
+<body>
+	<!-- My navigation menu at the top of the screen. It links through the pages. Buttons are clickable -->
+	<div class="nav">
+		<a href="mywebsite.html" class="button" align="center">Home</a>
+		<a href="#" class="button one" align="center">Forum</a>
+		<a href="#" class="button" align="center">About us</a>
+		<a href="#" class="button" align="center">Contact Us</a>
+	</div>
+	<!-- Main menu picture -->
+	<div class="adidas">
+		<img src="imgs/lol2.jpg" height="auto">
+	</div>
+	<!-- button images, made on photshop and implemented here. Links to product pages -->
+	<div class="panel" align="middle">
+			<a href="MensShoes.html"><img src="imgs/button1.png" height="auto" width="auto" align="middle"></a>
+			<a href="WomensShoes.html"><img src="imgs/button2.png" height="auto" width="auto" align="middle"></a>
+			<a href="KidsShoes.html"><img src="imgs/button4.png" height="auto" width="auto" align="middle"></a>
+			<a href="SalesShoes.html"><img src="imgs/button3.png" height="auto" width="auto" align="middle"></a>
+		</div>
+	<div class="Main"></div>
+	<!-- Div for white background. -->
+	<div class="Window">
+	
+	<!-- The catalog is set for items to be placed and aligned correctly. It gives an option to change all product layout. -->
+	<ul id="catalog">
+		<div class="product" align="left">
+            <li>
+      				<!-- Images with the name and price tag with it. The images are made with rollover using onmouseover and onmouseout which gives
+      				opportunity to change between 2 images -->
+					<a href="#" onclick="simpleCart.add('name=adidas Originals Rayado Lo','price=70','image=SMALL_ANDREW/mens/1m6.png');return false;"><img src="imgs/andrew web/mens/w1.png" alt="Air Jordan 10" onmouseover="this.src='imgs/andrew web/mens/2w1.png'" onmouseout="this.src='imgs/andrew web/mens/w1.png'" /></a>
+					<b>adidas Originals Rayado Lo<br/>
+					<span class="price" align="left">£70</span>
+				</li>
+			<li>
+      
+					<a href="#" onclick="simpleCart.add('name=adidas X 15.1 FG','price=60','image=SMALL_ANDREW/mens/1m7.png');return false;"><img src="imgs/andrew web/mens/w2.png" alt="Air Jordan 10" onmouseover="this.src='imgs/andrew web/mens/2w2.png'" onmouseout="this.src='imgs/andrew web/mens/w2.png'" /></a>
+					<b>adidas X 15.1 FG<br/>
+					<span class="price" align="left">£60</span>
+					
+				</li>
+					<li>
+      
+					<a href="#" onclick="simpleCart.add('name=Jordan Executive','price=50','image=SMALL_ANDREW/mens/1m11.png');return false;"><img src="imgs/andrew web/mens/w3.png" alt="Air Jordan 10" onmouseover="this.src='imgs/andrew web/mens/2w3.png'" onmouseout="this.src='imgs/andrew web/mens/w3.png'" /></a>
+					<b>Jordan Executive<br/>
+					<span class="price" align="left">£95</span>
+					
+				</li>
+		</div>
+		<div class="product" align="middle">
+				<li>
+      
+					<a href="#" onclick="simpleCart.add('name=Jordan Ultra.Fly','price=56','image=SMALL_ANDREW/mens/1m10.png');return false;"><img src="imgs/andrew web/mens/w4.png" alt="Air Jordan 10" onmouseover="this.src='imgs/andrew web/mens/2w4.png'" onmouseout="this.src='imgs/andrew web/mens/w4.png'" /></a>
+					<b>Jordan Ultra.Fly<br/>
+					<span class="price" align="left">£56</span>
+					
+				</li>
+				<li>
+     
+					<a href="#" onclick="simpleCart.add('name=Nike Air Force 1 Low','price=45','image=SMALL_ANDREW/mens/w7.png');return false;"><img src="imgs/andrew web/mens/w5.png" alt="Air Jordan 10" onmouseover="this.src='imgs/andrew web/mens/2w5.png'" onmouseout="this.src='imgs/andrew web/mens/w5.png'" /></a>
+					<b>Nike Air Force 1 Low<br/>
+					<span class="price" align="left">£45</span>
+					
+				</li>
+				<li>
+      
+					<a href="#" onclick="simpleCart.add('name=Nike Air Force 1 Mid','price=49','image=SMALL_ANDREW/mens/1m13.png');return false;"><img src="imgs/andrew web/mens/w6.png" alt="Air Jordan 10" onmouseover="this.src='imgs/andrew web/mens/2w6.png'" onmouseout="this.src='imgs/andrew web/mens/w6.png'" /></a>
+					<b>Nike Air Force 1 Mid<br/>
+					<span class="price" align="left">£49</span>
+					
+				</li>
+		</div>
+		<div class="product" align="middle">
+				<li>
+      
+					<a href="#" onclick="simpleCart.add('name=Nike Air Max 95','price=45','image=SMALL_ANDREW/mens/4.png');return false;"><img src="imgs/andrew web/mens/w7.png" alt="Air Jordan 10" onmouseover="this.src='imgs/andrew web/mens/2w7.png'" onmouseout="this.src='imgs/andrew web/mens/w7.png'" /></a>
+					<b>Nike Air Max 95<br/>
+					<span class="price" align="left">£45</span>
+					
+				</li>
+				<li>
+      
+					<a href="#" onclick="simpleCart.add('name=Nike Air Max 2016e','price=63','image=SMALL_ANDREW/mens/1m5.png');return false;"><img src="imgs/andrew web/mens/w8.png" alt="Air Jordan 10" onmouseover="this.src='imgs/andrew web/mens/2w8.png'" onmouseout="this.src='imgs/andrew web/mens/w8.png'" /></a>
+					<b>Nike Air Max 2016<br/>
+					<span class="price" align="">£63</span>
+					
+				</li>
+				<li>
+      
+					<a href="#" onclick="simpleCart.add('name=Nike Electro Flare Magista','price=55','image=SMALL_ANDREW/mens/m1.png');return false;"><img src="imgs/andrew web/mens/w9.png" alt="Air Jordan 10" onmouseover="this.src='imgs/andrew web/mens/2w9.png'" onmouseout="this.src='imgs/andrew web/mens/w9.png'" /></a>
+					<b align="left">Nike 'Electro Flare' Magista <br>Orden FG<br/>
+					<span class="price" align="">£55</span>
+					
+				</li>
+		</div>
+		<div class="product" align="middle">
+				<li>
+      
+					<a href="#" onclick="simpleCart.add('name=Nike Free Run','price=50','image=SMALL_ANDREW/mens/m2.png');return false;"><img src="imgs/andrew web/mens/w10.png" alt="Air Jordan 10" onmouseover="this.src='imgs/andrew web/mens/2w10.png'" onmouseout="this.src='imgs/andrew web/mens/w10.png'" /></a>
+					<b>Nike Free Run<br/>
+					<span class="price" align="">£50</span>
+					
+				</li>
+				<li>
+      
+					<a href="#" onclick="simpleCart.add('name=Nike Mercurial Superfly CR7 FG','price=79','image=SMALL_ANDREW/mens/1m4.png');return false;"><img src="imgs/andrew web/mens/w11.png" alt="Air Jordan 10" onmouseover="this.src='imgs/andrew web/mens/2w11.png'" onmouseout="this.src='imgs/andrew web/mens/w11.png'" /></a>
+					<b align="left">Nike Mercurial Superfly<br>CR7 FG<br/>
+					<span class="price" align="">£79</span>
+					
+				</li>
+				<li>
+      
+					<a href="#" onclick="simpleCart.add('name=Nike Radiant Reveal Tiempo','price=65','image=SMALL_ANDREW/mens/1m9.png');return false;"><img src="imgs/andrew web/mens/w12.png" alt="Air Jordan 10" onmouseover="this.src='imgs/andrew web/mens/2w12.png'" onmouseout="this.src='imgs/andrew web/mens/w12.png'" /></a>
+					<b align="left">Nike Radiant Reveal Tiempo <br>Legend VI<br/>
+					<span class="price" align="">£65</span>
+					
+				</li>
+				</div>
+		<div class="product" align="middle">
+				<li>
+      
+					<a href="#" onclick="simpleCart.add('name=Nike Savage Beauty Mercurial','price=80','image=SMALL_ANDREW/mens/1m8.png');return false;"><img src="imgs/andrew web/mens/w13.png" alt="Air Jordan 10" onmouseover="this.src='imgs/andrew web/mens/2w13.png'" onmouseout="this.src='imgs/andrew web/mens/w13.png'" /></a>
+					<b align="left">Nike Savage Beauty <br>Mercurial Vapour X FG CR7<br/>
+					<span class="price" align="">£80</span>
+					
+				</li>
+				<li>
+      
+					<a href="#" onclick="simpleCart.add('name=Nike SB Zoom Ejecta','price=68','image=SMALL_ANDREW/mens/1m3.png');return false;"><img src="imgs/andrew web/mens/w14.png" alt="Air Jordan 10" onmouseover="this.src='imgs/andrew web/mens/2w14.png'" onmouseout="this.src='imgs/andrew web/mens/w14.png'" /></a>
+					<b>Nike SB Zoom Ejecta<br/>
+					<span class="price" align="">£68</span>
+					
+				</li>
+				<li>
+      
+					<a href="#" onclick="simpleCart.add('name=Vans Winston Quilt','price=65','image=SMALL_ANDREW/mens/1m12.png');return false;"><img src="imgs/andrew web/mens/w15.png" alt="Air Jordan 10" onmouseover="this.src='imgs/andrew web/mens/2w15.png'" onmouseout="this.src='imgs/andrew web/mens/w15.png'" /></a>
+					<b>Vans Winston Quilt<br/>
+					<span class="price" align="">£65</span>
+					
+				</li>
+		</div>
+		</ul>
+				
+				<div id="sidebar">
+				<h2 align="middle">Cart items</h2>
+				
+				
+				<!--Add a Div with the class "simpleCart_items" to show your shopping cart area.-->
+				<div class="simpleCart_items" >
+				</div>
+				
+				
+				<!--Here's the Links to Checkout and Empty Cart-->
+				<a href="#" class="simpleCart_empty" align="middle">Empty the cart!</a>
+				<a href="#" class="simpleCart_checkout"></a>
+			</div>
+			
+	</div>
+	
+
+</body>
+</html>
