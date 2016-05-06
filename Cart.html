@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>My Website</title>
+	<link href="css/styles2.css" type="text/css" rel="stylesheet" />
+	<link href="ADDTO/css/style.css" rel="stylesheet">
+	<link href="ADDTO/css/bootstrap.min.css" rel="stylesheet">
+	        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script type="text/javascript">
+         function calculatePrice(myform){
+
+  //Get selected data  
+  var elt = document.getElementById("Quantity");
+  var quantity = elt.options[elt.selectedIndex].value;
+    
+  var elt = document.getElementById("Size");
+  var size = elt.options[elt.selectedIndex].value;
+    
+    
+  //convert data to integers
+  quantity = parseInt(quantity);
+  size = parseInt(size);
+    
+  //calculate total value  
+  var total = quantity*size; 
+    
+  //print value to  PicExtPrice 
+  document.getElementById("PicExtPrice").value=total;
+
+}
+</script>
+</head>
+<body>
+	<div class="nav">
+		<ul class="nav nav-tabs">
+              <li role="presentation" class="active"><a href="#">Home</a></li>
+              <li role="presentation"><a href="#">Profile</a></li>
+                 <li role="presentation"><a href="#">Messages</a></li>
+</ul>
+	</div> 
+
+    <div class="Window">
+	<div class="col-sm-9 padding-right">
+                <div class="table-responsive cart_info">
+                    <table class="table table-condensed">
+                        <thead>
+                        <tr class="cart_menu">
+                            <td class="image">Item</td>
+                            <td class="description"></td>
+                            <td class="price">Size</td>
+                            <td class="quantity">Quantity</td>
+                            <td class="total">Total</td>
+                            <td></td>
+                        </tr>
+                        </thead>
+                        <tbody>
+
+                        <!-- show product in cart -->
+
+                        <tr>
+                            <td class="cart_product">
+                                <a href=""><img style="width: 70px; height: 80px" alt="" src="imgs/shoes/Jordan-Air-10.png"></a>
+                            </td>
+                            <td class="cart_description">
+                                <h4><a href="">Jordan Air 10</a></h4>
+                                <p>ID: 1 </p>
+                            </td>
+                            
+                            
+                            
+                            
+    <div class="Totalprice">
+        <td>
+            <SELECT NAME="hddItem" onChange="calculatePrice()" id="Size">
+                <OPTION value="0">Select size if your shoe</OPTION>
+                <OPTION value="20$">6</OPTION>
+                <OPTION value="20$">7</OPTION>
+                <OPTION value="20$">8</OPTION>
+                <OPTION value="20$">9</OPTION>
+            </SELECT>
+        </td>
+        <td class="cart_quantity">
+                <FORM Name="myform">
+                    <SELECT NAME="Quantity" onChange="calculatePrice()" id="Quantity">
+                            <OPTION value="0">Select Quantity</OPTION>
+                            <OPTION value="1">1</OPTION>
+                            <OPTION value="2">2</OPTION>
+                            <OPTION value="3">3</OPTION>
+                    </SELECT>
+</FORM>
+        </td>
+    </div>
+                        
+                        
+                        
+                        
+                            <td>
+                                <INPUT type="text" id="PicExtPrice" Size=8>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+
+                </div>
+            </div>
+        </div>
+
+	
+</body>
+</html>
