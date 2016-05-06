@@ -1,0 +1,56 @@
+body {
+    background-color: black;
+}
+.nav {
+    background-color: white;
+    height:50px;
+    width: width;
+    color: black;
+    text-align: center;
+    margin: auto;
+}
+
+.button {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    background-color: white;
+    width: 85px;
+    height:40px;
+    text-align: center;
+    border-radius: 5px;
+    line-height: 2.5;
+    
+}
+.button:hover {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    text-align: center;
+    margin: auto;
+    padding-top: auto;
+    width: 100px;
+    height: 50px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.Window {
+    width: auto;
+    height: 600px;
+    background-color: white;
+    overflow: auto;
+    margin: 5px auto 0 auto;
+    
+}
+.panel {
+    background-color: gray;
+    width: auto;
+    height: auto;
+    left: 0;
+    right: 0;
+    margin:0 auto;
+    vertical-align: middle;
+}
+
+html {
+    height: 100%;
+}
